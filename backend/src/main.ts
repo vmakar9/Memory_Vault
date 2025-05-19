@@ -19,9 +19,9 @@ app.use("/", vaultRouter);
 
 AppDataSource.initialize()
   .then(() => {
-    console.log("📦 Connected to PostgreSQL");
+    console.log(" Connected to PostgreSQL");
     app.listen(configs.PORT, () => {
-      console.log(`🚀 Server is running on port ${configs.PORT}`);
+      console.log(` Server is running on port ${configs.PORT}`);
     });
   })
   .catch((err) => {
